@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Zica0</string>
+    <string name="title_activity_main">Map</string>
+    <string name="action_settings">action_settings</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="endereco">Endereço</string>
+    <string name="ponto_referencia">Ponto de Referencia</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">activiteLogin</string>
+    <string name="title_activity_orgao">activity_orgao</string>
+    <string name="title_activity_denuncia">activity_denuncia</string>
+</resources>

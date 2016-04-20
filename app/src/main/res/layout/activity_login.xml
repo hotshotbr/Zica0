@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_weight="0.62">
+
+        <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/tree"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUS"
+            android:id="@+id/radioButtonSus"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/tree"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMMA"
+            android:id="@+id/radioButtonAmma"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView4"
+        android:background="@drawable/tree"
+        android:layout_row="2"
+        android:layout_column="0" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMURG"
+            android:id="@+id/radioButtonComurg"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:checked="false" />
+
+    </GridLayout>
+
+    <EditText
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="USUÁRIO"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword"
+        android:hint="Password"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/abc_action_menu_layout"
+        android:layout_alignParentEnd="false"
+        android:layout_above="@+id/editText3" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick_Login"
+        android:text="FINALIZAR"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/editTextLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude"
+        android:layout_alignBaseline="@+id/editTextLatitude"
+        android:layout_alignBottom="@+id/editTextLatitude"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/btnLogin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextLatitude"
+        android:hint="@string/longitude"
+        android:layout_above="@+id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnLogin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_above="@+id/editTextLatitude"
+        android:layout_alignEnd="@+id/map"
+        android:layout_alignStart="@+id/btnLogin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_alignEnd="@+id/editTextLatitude"
+        android:text="USUÁRIO: " />
+
+</RelativeLayout>
